@@ -1,0 +1,238 @@
+/**LANDING PAGE - INDEX*/
+.landingBody {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .landingMain {
+    margin: auto auto;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px teal;
+    overflow: hidden;
+  }
+
+  .animaciones {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .baner {
+      width: 100%;
+      margin: 1rem 0;
+      height: 2.5rem;
+      border-top: 1px solid #dbff76;
+      border-bottom: 1px solid #dbff76;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .baner:hover {
+      transform: scale(1.2);
+    }
+
+    .baner1 p {
+      margin: auto 0;
+      color: #fff8f0;
+      font-size: 1.2rem;
+      transform: translateX(-100%);
+      animation-name: textoAnimado1;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 8s;
+      animation-delay: 0s;
+    }
+
+    .baner2 p {
+      margin: auto 0;
+      color: #fff8f0;
+      font-size: 1.2rem;
+      transform: translateX(170%);
+      animation-name: textoAnimado2;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 8s;
+      animation-delay: 0s;
+    }
+
+    .filaCentral {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .columnaIzquierda {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 70%;
+        }
+      }
+
+      .columnaDerecha {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 2.5rem;
+          font-weight: 500;
+          color: #0e6b6c;
+        }
+        h3 {
+          font-size: 2rem;
+          font-weight: 300;
+          color: #fff8f0;
+        }
+        a {
+          margin-top: 2rem;
+          padding: 1rem;
+          border: 1px solid #dbff76;
+          border-radius: 1rem;
+          color: #fff8f0;
+          text-decoration: none;
+          font-weight: 300;
+          font-size: 1.2rem;
+        }
+
+        a:hover {
+          background: #dbff76;
+          color: #151514;
+          font-weight: 400;
+          transition: 0.2s all ease-in;
+        }
+      }
+    }
+  }
+}
+
+/*RESPONSIVE*/
+@media (max-width: 940px) {
+  .landingBody .landingMain {
+    width: 750px;
+  }
+
+  .landingBody .landingMain .filaCentral .columnaIzquierda {
+    width: 50%;
+  }
+
+  .landingBody .landingMain .filaCentral .columnaDerecha {
+    width: 50%;
+  }
+
+  .landingBody .landingMain .filaCentral .columnaDerecha h2 {
+    font-size: 2rem;
+  }
+  .landingBody .landingMain .filaCentral .columnaDerecha h3 {
+    font-size: 1.8rem;
+  }
+  .landingBody .landingMain .filaCentral .columnaDerecha a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .landingBody .landingMain {
+    width: 550px;
+  }
+
+  .landingBody {
+    .landingMain {
+      .animaciones {
+        .baner {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .landingBody .landingMain .filaCentral .columnaIzquierda img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .landingBody {
+    .landingMain {
+      width: 400px;
+      .animaciones {
+        .baner {
+          width: 100%;
+          p {
+            font-size: 0.7rem;
+            width: 100%;
+            animation-duration: 9s;
+          }
+        }
+        .columnaDerecha h2 {
+          text-align: center;
+        }
+        .columnaDerecha h3 {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 424px) {
+  .landingBody {
+    .landingMain {
+      width: 95%;
+      height: 90vh;
+      .animaciones {
+        .baner {
+          width: 100%;
+          p {
+            font-size: 0.7rem;
+            width: 100%;
+            animation-name: none;
+            transform: translateX(0%);
+            text-align: center;
+          }
+        }
+
+        .filaCentral {
+          flex-direction: column;
+          .columnaDerecha {
+            a {
+              margin-top: 1rem;
+              padding: 0.65rem;
+              font-size: 1rem;
+              width: 8rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**ANIMACIONES*/
+@keyframes textoAnimado1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(162%);
+  }
+}
+@keyframes textoAnimado2 {
+  0% {
+    transform: translateX(170%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

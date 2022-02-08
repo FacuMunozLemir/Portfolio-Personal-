@@ -1,0 +1,23 @@
+.navbar {
+  background: #151514;
+}
+.navbar-brand {
+  font-weight: 500;
+  color: #fff8f0;
+}
+
+.navbar-brand:hover {
+  color: #dbff76;
+  transition: 0.3s all ease;
+}
+
+.nav-item a {
+  font-weight: 300;
+  margin-left: 0.5rem;
+  color: #fff8f0;
+}
+
+.nav-item a:hover {
+  color: #dbff76;
+  transition: 0.2s all ease;
+}

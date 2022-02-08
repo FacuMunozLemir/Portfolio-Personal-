@@ -1,0 +1,193 @@
+.contacto {
+  width: 100%;
+  height: auto;
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff8f0;
+  }
+  &__fila {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__columnaFormulario {
+      width: 50%;
+      height: 100%;
+      & form {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        label {
+          font-weight: 300;
+          margin-top: 2rem;
+          font-size: 1rem;
+          color: #fff8f0;
+        }
+        input {
+          background: #151514;
+          border-style: none;
+          outline: none;
+          border-bottom: 1px solid #dbff76;
+          color: #fff8f0;
+          font-weight: 300;
+          font-size: 1.05rem;
+        }
+        input:focus {
+          border-bottom: 2px solid #dbff76;
+          transition: 0.1s all ease;
+        }
+
+        .botones {
+          width: 100%;
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          input {
+            width: 45%;
+            padding: 1rem;
+            border: 1px solid #dbff76;
+          }
+          input:hover {
+            background: #dbff76;
+            color: #151514;
+            transition: 0.3s all ease;
+          }
+        }
+      }
+    }
+    &__columnaDatos {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__mapa {
+        iframe {
+          width: 35rem;
+          height: 35rem;
+        }
+      }
+      &__redesSociales {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        a {
+          font-size: 1.1rem;
+          padding: 1.5rem;
+          border: 1px solid #dbff76;
+          color: #dbff76;
+          border-radius: 50%;
+          i {
+            font-size: 1.2rem;
+          }
+        }
+        a:hover {
+          background: #dbff76;
+          color: #151514;
+          transition: 0.3s all ease;
+        }
+      }
+    }
+  }
+}
+
+/*MEDIAS QUERY*/
+@media (max-width: 1000px) {
+  .contacto__fila {
+    flex-direction: column;
+    &__columnaFormulario {
+      width: 60%;
+      margin-bottom: 1rem;
+      form {
+        margin: 0rem;
+        width: 100%;
+        input {
+          width: 100%;
+        }
+        .terminosCondiciones {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 1rem 0rem;
+          label {
+            margin: 0rem;
+          }
+          #terminos {
+            width: 10%;
+          }
+        }
+      }
+    }
+    &__columnaDatos {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto__fila {
+    &__columnaFormulario {
+      width: 90%;
+      margin-bottom: 1rem;
+    }
+    &__columnaDatos {
+      width: 90%;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contacto {
+    &__fila {
+      &__columnaDatos {
+        &__mapa {
+          iframe {
+            width: 20rem;
+            height: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contacto {
+    &__fila {
+      &__columnaFormulario {
+        width: 100%;
+        form {
+          .botones {
+            width: 100%;
+            input {
+              width: 48%;
+              font-size: 0.8rem;
+              padding: 1rem 0.65rem;
+            }
+          }
+        }
+      }
+      &__columnaDatos {
+        width: 100%;
+        &__redesSociales {
+          a {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
