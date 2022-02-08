@@ -5,8 +5,10 @@ A continuación se detallan cuales fueron los cambios realizados para mejorar el
     la barra de navegación, lo que se muestra en la dirección URL tenga sentido.
 4- Se corrigió el titulo de los html para que no sea el mismo en todos.
 5- Se editaron las imágenes que originalmente eran de resolución 1920x1280, para que tengan un tamaño 
-    acorde al lugar donde se las usa, cuya resolución maxima es de 100px x 100px.
+    acorde al lugar donde se las usa, cuya resolución maxima es de 5rem x 5rem = 80px x 80px;
 6- Se procesaron las imágenes para eliminar toda la información que no sea necesaria para mostrar la 
     imágen.
 7- Se completaron las propiedades alt="" de las imágenes.
 8- Se mejoró el responsive del sitio web en general.
+9- Se cambiaron las ilustraciones que estaban en formato png por vectores SVG.
+10- Se revisaron los nombres de los bloques de las secciones para que tenga sentido la estructura del   sitio web
