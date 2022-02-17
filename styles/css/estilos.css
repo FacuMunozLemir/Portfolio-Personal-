@@ -305,7 +305,8 @@
 
 .sobreMi {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: 3rem; }
   .sobreMi__fila {
     width: 100%;
     height: 100%;
@@ -382,9 +383,10 @@
 
 .trabajosDestacados {
   width: 100%;
-  height: auto;
-  margin-top: 2rem; }
+  height: 100vh;
+  margin-top: 5rem; }
   .trabajosDestacados h2 {
+    margin-top: 5rem;
     font-size: 2.5rem;
     font-weight: 300;
     text-align: center;
@@ -392,7 +394,7 @@
   .trabajosDestacados__fila {
     width: 100%;
     height: auto;
-    margin-top: 4rem;
+    margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
@@ -402,14 +404,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 1rem;
       border-left: 2px solid #dbff76;
       border-bottom: 2px solid #dbff76;
       border-right: 2px solid #0e6b6c;
       border-top: 2px solid #0e6b6c; }
       .trabajosDestacados__fila__columnas img {
-        width: 5rem;
-        height: 5rem;
-        margin-top: -2.5rem;
+        width: 10rem;
+        height: 10rem;
+        margin-top: -5rem;
         padding: 0.065rem;
         border-left: 2px solid #dbff76;
         border-bottom: 2px solid #dbff76;
@@ -459,8 +462,9 @@
 .servicios {
   width: 100%;
   height: auto;
-  margin: 5rem 0rem; }
+  margin: 8rem 0rem; }
   .servicios h2 {
+    margin-bottom: 3rem;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 300;
@@ -480,8 +484,8 @@
       flex-direction: column;
       align-content: flex-start; }
       .servicios__fila__columnas img {
-        width: 5rem;
-        height: 5rem; }
+        width: 100%;
+        height: 8rem; }
       .servicios__fila__columnas h4 {
         margin-top: 1rem;
         font-weight: 300;
