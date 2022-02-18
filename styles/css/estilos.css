@@ -383,7 +383,7 @@
 
 .trabajosDestacados {
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin-top: 5rem;
   display: block; }
   .trabajosDestacados h2 {
@@ -397,11 +397,10 @@
     height: auto;
     margin-top: 8rem;
     display: flex;
-    align-items: center;
     justify-content: space-evenly; }
     .trabajosDestacados__fila__columnas {
       width: 25%;
-      height: 35rem;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
