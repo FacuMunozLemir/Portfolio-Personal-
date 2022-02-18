@@ -384,7 +384,8 @@
 .trabajosDestacados {
   width: 100%;
   height: 100vh;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  display: block; }
   .trabajosDestacados h2 {
     margin-top: 5rem;
     font-size: 2.5rem;
@@ -400,7 +401,7 @@
     justify-content: space-evenly; }
     .trabajosDestacados__fila__columnas {
       width: 25%;
-      height: 80%;
+      height: 35rem;
       display: flex;
       flex-direction: column;
       align-items: center;
