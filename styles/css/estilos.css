@@ -210,7 +210,8 @@
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      overflow: hidden; }
       .main__section__fila__columna-1 {
         height: 100%;
         display: flex;
@@ -280,7 +281,8 @@
   .main {
     height: 100vh; }
   .main__section__fila {
-    flex-direction: column; }
+    flex-direction: column;
+    overflow: hidden; }
     .main__section__fila__columna-1 {
       width: 90%; }
       .main__section__fila__columna-1__redSocial {
@@ -312,7 +314,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    overflow: hidden; }
     .sobreMi__fila__columna1 {
       height: 100%;
       width: 50%;
@@ -454,10 +457,11 @@
     height: auto; }
     .trabajosDestacados__fila {
       flex-direction: column;
-      margin-top: 1.5rem; }
+      margin-top: 1.5rem;
+      align-items: center; }
       .trabajosDestacados__fila__columnas {
         width: 90%;
-        margin-top: 3.5rem; } }
+        margin-top: 5.5rem; } }
 
 .servicios {
   width: 100%;
@@ -536,7 +540,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    overflow: hidden; }
     .contacto__fila__columnaFormulario {
       width: 50%;
       height: 100%; }

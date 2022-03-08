@@ -10,6 +10,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
       &__columna-1 {
         height: 100%;
         display: flex;
@@ -111,6 +112,7 @@
   }
   .main__section__fila {
     flex-direction: column;
+    overflow: hidden;
     &__columna-1 {
       width: 90%;
       &__redSocial {

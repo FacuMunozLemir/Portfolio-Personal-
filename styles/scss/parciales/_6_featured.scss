@@ -15,7 +15,6 @@
     height: auto;
     margin-top: 8rem;
     display: flex;
-
     justify-content: space-evenly;
     &__columnas {
       width: 25%;
@@ -90,9 +89,10 @@
     &__fila {
       flex-direction: column;
       margin-top: 1.5rem;
+      align-items: center;
       &__columnas {
         width: 90%;
-        margin-top: 3.5rem;
+        margin-top: 5.5rem;
       }
     }
   }
